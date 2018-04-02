@@ -1,5 +1,6 @@
 # Graph Theory
-# Project 2018
+
+### Project 2018
 
 This repository contains code written in the programming language Go.
 

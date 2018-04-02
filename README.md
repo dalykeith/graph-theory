@@ -17,7 +17,7 @@ You must write a program in the Go programming language that can
 build a non-deterministic finite automaton (NFA) from a regular expression,
 and can use the NFA to check if the regular expression matches any given
 string of text.
-[Full Project spec](http://www.github.com)
+[Full Project spec](https://github.com/dalykeith/graph-theory/blob/master/project.pdf)
 
 ### To run the Programs
 

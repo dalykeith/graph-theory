@@ -1,1 +1,57 @@
-# graph-theory
+# Graph Theory
+# Project 2018
+
+This repository contains code written in the programming language Go.
+
+Author: Keith Daly.
+
+Innitiated: April 2018.
+
+Student @GMIT, Galway, Ireland. 
+
+Year three - Semester two.
+
+## Problem Statement
+
+You must write a program in the Go programming language that can
+build a non-deterministic finite automaton (NFA) from a regular expression,
+and can use the NFA to check if the regular expression matches any given
+string of text.
+[Full Project spec](http://www.github.com)
+
+### To run the Programs
+
+Install Go on your device by visiting [GoLang](https://golang.org/)
+
+Clone the repository in terminal/cmd by executing the following command
+
+```
+git clone https://github.com/dalykeith/XYZ
+```
+
+Locate file
+
+```
+cd X\X.go
+```
+
+Build  with the command
+
+```
+go build X.go
+```
+
+Run the program
+
+```
+
+./X
+
+```
+
+###  Adapted from
+
+* [Regular Expression](https://swtch.com/~rsc/regexp/regexp1.html) - Russ Cox on regex / Thompson NFA
+* [Thompson's Construction](https://web.microsoftstream.com/video/946a7826-e536-4295-b050-857975162e6c) -  Ian McLoughlin 
+* [NFA Example](https://github.com/kkdai/nfa) - kkdai
+* [NFA Moves](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton#NFA_with_%CE%B5-moves) - NFA automation

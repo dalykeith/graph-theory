@@ -8,7 +8,7 @@ func intopost(infix string) string {
 		specials := map[rune]int{'*': 10, '.': 9, '|': 8}
 
 	//pofix := []rune{}
-	pofix,  s := []rune{}, []rune{}
+	postfix,  s := []rune{}, []rune{}
 
 	//Loop over input
 	for _, r := range infix {
@@ -17,24 +17,24 @@ func intopost(infix string) string {
 		s = append(s, r)
 		case r == ')':
 			for s[len(s)-1] != '(' {
-				pofix, s = append(pofix, s[len(s)-1]), s[:len(s)]
+				postfix, s = append(postfix, s[len(s)-1]), s[:len(s)]
 			}
 			s = s[:len(s)-1]
 		case specials[r] > 0:
 			for len(s) > 0 && specials[r] <= specials[s[len(s)-1]]{
-				pofix, s = append(pofix, s[len(s)-1]), s[:len(s)-1]
+				postfix, s = append(postfix, s[len(s)-1]), s[:len(s)-1]
 			}
 			s = append(s, r)
 		default:
-			pofix = append(pofix,r)
+			postfix = append(postfix,r)
 		}
 	}
 
 	for len(s) > 0 {
-		pofix, s = append(pofix,s[len(s)-1]), s[:len(s)-1]
+		postfix, s = append(postfix,s[len(s)-1]), s[:len(s)-1]
 	}
 
-	return string(pofix)
+	return string(postfix)
 }
 func main(){
 	//Answer: at.c*

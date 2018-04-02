@@ -5,7 +5,7 @@ This repository contains code written in the programming language Go.
 
 Author: Keith Daly.
 
-Innitiated: April 2018.
+Innitiated: March 2018.
 
 Student @GMIT, Galway, Ireland. 
 
@@ -26,7 +26,7 @@ Install Go on your device by visiting [GoLang](https://golang.org/)
 Clone the repository in terminal/cmd by executing the following command
 
 ```
-git clone https://github.com/dalykeith/XYZ
+git clone https://github.com/dalykeith/graph-theory.git
 ```
 
 Locate file

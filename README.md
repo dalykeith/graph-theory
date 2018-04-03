@@ -18,25 +18,28 @@ You must write a program in the Go programming language that can
 build a non-deterministic finite automaton (NFA) from a regular expression,
 and can use the NFA to check if the regular expression matches any given
 string of text.
+
 [Full Project spec](https://github.com/dalykeith/graph-theory/blob/master/project.pdf)
 
-### To run the Programs
+### Prerequisites
 
-Install Go on your device by visiting [GoLang](https://golang.org/)
+[GoLang](https://golang.org/) - Needed on device to run the programs
 
-Clone the repository in terminal/cmd by executing the following command
+### Installing
+
+* Clone the repository in terminal/cmd by executing the following command
 
 ```
 git clone https://github.com/dalykeith/graph-theory.git
 ```
 
-Locate file
+* Locate file
 
 ```
 cd X\X.go
 ```
 
-Build  with the command
+* Build
 
 ```
 go build X.go
@@ -56,3 +59,7 @@ Run the program
 * [Thompson's Construction](https://web.microsoftstream.com/video/946a7826-e536-4295-b050-857975162e6c) -  Ian McLoughlin 
 * [NFA Example](https://github.com/kkdai/nfa) - kkdai
 * [NFA Moves](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton#NFA_with_%CE%B5-moves) - NFA automation
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/dalykeith/graph-theory/blob/master/LICENSE) file for details

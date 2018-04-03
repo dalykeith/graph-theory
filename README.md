@@ -33,7 +33,7 @@ string of text.
 git clone https://github.com/dalykeith/graph-theory.git
 ```
 
-* Locate file
+* Locate 
 
 ```
 cd X\X.go
@@ -45,12 +45,10 @@ cd X\X.go
 go build X.go
 ```
 
-Run the program
+* Run
 
 ```
-
 ./X
-
 ```
 
 ###  Adapted from

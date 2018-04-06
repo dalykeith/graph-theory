@@ -25,7 +25,7 @@ string of text.
 
 [GoLang](https://golang.org/) - Needed on device to run the programs
 
-### Installing
+## Installing
 
 * Clone the repository in terminal/cmd by executing the following command
 
@@ -33,30 +33,56 @@ string of text.
 git clone https://github.com/dalykeith/graph-theory.git
 ```
 
-* Locate 
+* Locate File
 
 ```
-cd X\X.go
+cd graph-theory
 ```
 
-* Build
+* Build Program
 
 ```
-go build X.go
+go build runner.go
 ```
 
-* Run
+* Run Program
 
 ```
-./X
+./runner
 ```
 
-###  Adapted from
+## Output
+
+### Infix to Postfix
+
+* a.b.c* -> ab.c*.
+
+* (a.(b|d))* -> abd|.*
+
+* a.(b|d).c* -> abd|.c*.
+
+* a.(b.b)+.c -> abb.+.c.
+
+### Postfix to NFA:
+
+* ab.c*| will match cccc
+
+###  Understanding the project
+
+First to understand Shunting yard algorithm and Thompsons construction (Links below). The Shunting yard algorithm changed infix regular expression to postfix regular expressions. The Thompson construction then determines what each character represents and the action that will occur when the action is achieved.
+
+###  Research & Adapted from
 
 * [Regular Expression](https://swtch.com/~rsc/regexp/regexp1.html) - Russ Cox on regex / Thompson NFA
 * [Thompson's Construction](https://web.microsoftstream.com/video/946a7826-e536-4295-b050-857975162e6c) -  Ian McLoughlin 
-* [NFA Example](https://github.com/kkdai/nfa) - kkdai
 * [NFA Moves](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton#NFA_with_%CE%B5-moves) - NFA automation
+* [NFA Example](https://github.com/kkdai/nfa) - kkdai
+* [Shunting Yard](http://jacobappleton.io/2015/07/02/regex-ii-the-shunting-yard-algorithm/)   - Jacob Appleton
+* [Shunting Yard Example](https://github.com/mgenware/go-shunting-yard) - mgenware
+
+
+
+
 
 ### License
 

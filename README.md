@@ -55,17 +55,17 @@ go build runner.go
 
 ### Infix to Postfix
 
-* a.b.c* -> ab.c*.
+* a.b.c* to ab.c*.
 
-* (a.(b|d))* -> abd|.*
+* (a.(b|d))* to abd|.*
 
-* a.(b|d).c* -> abd|.c*.
+* a.(b|d).c* to abd|.c*.
 
-* a.(b.b)+.c -> abb.+.c.
+* a.(b.b)+.c to abb.+.c.
 
 ### Postfix to NFA:
 
-* ab.c*| will match cccc
+* ab.c*| to match cccc
 
 ###  Understanding the project
 

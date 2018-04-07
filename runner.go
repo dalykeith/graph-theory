@@ -28,7 +28,7 @@ func main() {
 			expression, _ := reader.ReadString('\n')
 			expression = assets.TrimEndString(expression)
 
-			// outputs
+			// inputs to outputs
 			// a.b.c* -> ab.c*.	(a.(b|d))* -> abd|.*	a.(b|d).c* -> abd|.c*.		a.(b.b)+.c -> abb.+.c.
 
 			fmt.Println("Infix:  ", expression) //output the expression
@@ -76,4 +76,4 @@ func main() {
 		}
 
 	} //end While loop
-} //end main
+} // end main

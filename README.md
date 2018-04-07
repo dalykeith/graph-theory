@@ -51,7 +51,7 @@ go build runner.go
 ./runner
 ```
 
-## Output
+## Inputs to Output
 
 ### Infix to Postfix
 
